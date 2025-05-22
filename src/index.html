@@ -1,11 +1,94 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Aniversário Leonardo</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/main.scss">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 <body>
-    
+    <header class="header">
+        <div class="container">
+            <div class="header__image-text">
+                <img src="./images/foto_leo.png" class="header__photo" alt="Leonardo">
+                <h2>Aniversário <br>do <br>Léo!!!!</h2>
+            </div>
+            <p class="header__text">
+                Você está sendo convidado para o evento mais importante do ano! <br>Será em <span id="contador"></span>
+            </p>
+            <div class="infos-bar">
+                <ul class="infos-bar__infos">
+                    <li class="infos-bar__infos__item">
+                        <b>Localização</b>
+                        Allianz Parque - Barra Funda | São Paulo
+                    </li>
+                    <li class="infos-bar__infos__item">
+                        <b>Preços</b>
+                        A partir de R$ 120,00
+                    </li>
+                    <li class="infos-bar__infos__item">
+                        <b>Quando</b>
+                        30/09/2025 às 19hrs
+                    </li>
+                </ul>
+                <a href="#" class="button button--primary">Confirme sua presença</a>
+            </div>
+        </div>
+    </header>
+
+    <section class="event event--restaurant">
+        <div class="container">
+            <div class="event__details">
+                <h2 class="event__details__title">Restaurante</h2>
+                <p class="event__details__text">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum, at rerum? Illum dignissimos deleniti odit impedit facere, dolores necessitatibus eum quod sequi aperiam unde id, ducimus quibusdam veniam fugit. Repellendus?
+                </p>
+            </div>
+            <img class="event__image" src="./images/restaurante.webp" alt="">
+        </div>
+    </section>
+
+    <section class="event event--buffet event--image-left">
+        <div class="container">
+            <div class="event__details">
+                <h2 class="event__details__title">Open Buffet</h2>
+                <p class="event__details__text">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum, at rerum? Illum dignissimos deleniti odit impedit facere, dolores necessitatibus eum quod sequi aperiam unde id, ducimus quibusdam veniam fugit. Repellendus?
+                </p>
+            </div>
+            <img class="event__image" src="./images/buffet.jpeg" alt="">
+        </div>
+    </section>
+
+    <section class="event event--presents">
+        <div class="container">
+            <div class="event__details">
+                <h2 class="event__details__title">Presentes</h2>
+                <p class="event__details__text">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum, at rerum? Illum dignissimos deleniti odit impedit facere, dolores necessitatibus eum quod sequi aperiam unde id, ducimus quibusdam veniam fugit. Repellendus?
+                </p>
+            </div>
+            <img class="event__image" src="./images/presentes.png" alt="">
+        </div>
+    </section>
+
+    <section class="event event--presence event--image-left">
+        <div class="container">
+            <div class="event__details">
+                <h2 class="event__details__title">Conto com sua presença</h2>
+                <p class="event__details__text">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum, at rerum? Illum dignissimos deleniti odit impedit facere, dolores necessitatibus eum quod sequi aperiam unde id, ducimus quibusdam veniam fugit. Repellendus?
+                </p>
+            </div>
+            <img class="event__image" src="./images/comemoracao.png" alt="">
+        </div>
+    </section>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="scripts/main.js"></script>
 </body>
 </html>

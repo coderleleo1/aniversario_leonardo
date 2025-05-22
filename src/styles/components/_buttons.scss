@@ -1,0 +1,15 @@
+@use '../variables';
+
+.button {
+    padding: 12px;
+    font-size: 18px;
+    text-decoration: none;
+    text-align: center;
+    white-space: nowrap;
+
+    background-color: variables.$purple;
+
+    &:hover {
+        background-color: lighten(variables.$purple, 8%);
+    }
+}
