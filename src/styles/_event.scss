@@ -17,6 +17,16 @@
 
     &--presence {
         background-image: linear-gradient(variables.$yellow, variables.$corFonteDark);
+        
+        .event__image {
+            max-width: 420px;
+            max-height: 420px;
+
+            @media (max-width: 640px) {
+                max-width: 300px;
+                max-height: 300px;
+            }
+        }
     }
 
     &__image {
@@ -33,13 +43,6 @@
     &--image-left {
         .container {
             flex-direction: row-reverse;
-
-            &:last-child {
-                .event__image {
-                    max-width: 400px;
-                    max-height: 400px;
-                }
-            }
         }
     }
 
@@ -52,6 +55,22 @@
 
         &__description {
             line-height: 22px;
+        }
+    }
+
+    @media (max-width: 640px) {
+        .container {
+            display: block;
+            text-align: center;
+        }
+
+        &__details {
+            margin-right: 0;
+            margin-bottom: 16px;
+        }
+
+        &__image {
+            width: 100%;
         }
     }
 }

@@ -12,6 +12,10 @@
 
         h2 {
             font-size: 40px;
+
+            @media (max-width: 640px) {
+                font-size: 30px;
+            }
         }
     }
 
@@ -30,7 +34,21 @@
         text-align: center;
 
         span {
-            color: variables.$pink;
+            color: lighten(variables.$pink, 28%);
+        }
+    }
+
+    @media (max-width: 640px) {
+        padding: 40px 0;
+
+        &__photo {
+            max-width: 120px;
+        }
+
+        &__text {
+            font-size: 22px;
+            line-height: 24px;
+            margin: 24px 0;
         }
     }
 }
@@ -54,6 +72,18 @@
                 color: variables.$corFonteDark; 
                 font-size: 18px;
                 display: block;
+            }
+        }
+    }
+
+    @media (max-width: 640px){
+        display: block;
+
+        &__infos {
+            display: block;
+
+            &__item {
+                margin-bottom: 30px;
             }
         }
     }
